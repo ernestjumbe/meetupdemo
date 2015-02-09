@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h1>Tweets</h1>
+	<ul id="tweets" class="list-group">
+		
+	</ul>
+{% endblock content %}
+
+{% block footer_js %}
+	{{ block.super }}
+	<script src="{{ STATIC_URL }}js/tweets.js"></script>
+{% endblock footer_js %}
